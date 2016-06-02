@@ -3,3 +3,17 @@ When you initialize a new repository you are taking what is just a directory of 
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 The staging area serves as a middle man between the working directory and your repository. I think it has value in that it allows you to review the files that you are going to add to the repo before you make the commit. Lets you do a double-check to ensure that the changes are logical.
+
+How can you use the staging area to make sure you have one commit per logical change?
+You can compare the staging area to the working directory as well as the most recent commit using the commands "git diff" and "git diff --stage" respectively. This allows you to see the changes between each directory so that you can ensure each change marks a single logical change.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Branches would be really helpful when you want to keep two separate versions of your file for use. You're not fixing a bug or making a universal change, but you have a situation where two versions of the file makes sense and you want to label those commits so they'll be easy to retreive if need be. You are essentially marking the point where you're branching off from the main files.
+
+How do the diagrams help you visualize the branch structure?
+They let you think about the branches at points when you are labeling a split in the master branch. This is important because it lets you know what points you can go back to in a certain branch and illustrates the concept of reachability.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+This brings together two separate branches and allows you to access the commits from both branches in the same git log command. We represent it in the diagram as converging into one because, even though the commits show up in the same place during a git log, technically they were created in two separate branches and have parents that may not directly correspond the the previous commit in the git log. 
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
