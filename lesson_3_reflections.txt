@@ -1,1 +1,2 @@
 When would you want to use a remote repository rather than keeping all your work local?
+You might want to use a remote repository if you want to edit the file because you know that others are currently collaborating with the file and using the remote repoisitory. Alternatively, you may just want to have you changes stored in the remote repository rather than locally. 
